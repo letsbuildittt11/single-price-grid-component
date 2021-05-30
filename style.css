@@ -1,0 +1,154 @@
+:root {
+    --cyan: hsl(179, 62%, 43%); /*section background color*/
+    --bright-yellow: hsl(71, 73%, 54%); /*text & button*/
+    --light-gray: hsl(204, 43%, 93%); /*text & body background*/
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: var(--light-gray);
+}
+
+
+/*###Layout*/
+.container {
+    max-width: 80%;
+    margin: 3em auto;
+    box-shadow: 0 5px 10px 3px #333;
+}
+
+.header {
+    padding: 1.75em 1.5em;
+    background-color: #fff;
+    border-radius: 7px 7px 0 0;
+}
+
+.main {
+    padding: 1.75em 1.5em;
+    background-color: var(--cyan);
+}
+
+.footer {
+    padding: 1.75em 1.5em;
+    background-color: hsla(179, 62%, 43%, 0.801);
+    border-radius: 0 0 7px 7px;
+}
+
+.signup-btn {
+    display: block;
+    width: 200px;
+    height: 45px;
+    margin: 1em auto 0;
+    color: #fff;
+    background-color: var(--bright-yellow);
+    font-weight: 700;
+    border-style: none;
+    border-radius: 4px;
+    box-shadow: 0 3px 5px 1px #333; 
+}
+
+ul li {
+    list-style: none;
+}
+
+
+/*###Typography*/
+h2 {
+    margin-bottom: 1.25em;
+    color: #fff;
+    font-size: 1.3125rem;
+    font-weight: 700;
+}
+
+.header h2 {
+    color: var(--cyan);
+}
+
+h3 {
+    color: var(--bright-yellow);
+    margin-bottom: 1.25em;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.header h3 {
+    color: var(--bright-yellow);
+}
+
+p {
+    
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.header p {
+    color: var(--grayish-blue);
+}
+.footer p {
+    color: var(--light-gray);
+}
+
+.pricing {
+    opacity: .9;
+    margin-bottom: .25em;
+}
+
+span {
+    opacity: 1;
+    margin-right: .25em;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+/*###Media Query (Desktop)*/
+@media (min-width: 998px) {
+
+    .container {
+        max-width: 40%;
+        margin-top: 10em;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 40% 60%;
+        grid-template-areas: 
+        'header header'
+        'main footer';
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .main {
+        grid-area: main;
+        border-bottom-left-radius: 7px;
+    }
+
+    .footer {
+        grid-area: footer;
+        border-radius: 0 0 7px 0;
+    }
+
+    .signup-btn {
+        width: 280px;
+        margin-top: 2em;
+    }
+}
+
+/*Attribution*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

@@ -17,7 +17,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 ### Links
 
 - Solution URL: [https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc/hub/singlepricegridcomponent-ugKFjqXz5]
-- Live Site URL: [file:///H:/Frontend%20Mentor%20Challenges/single-price-grid-component-master/index.html]
+- Live Site URL: [https://letsbuildittt11.github.io/single-price-grid-component/]
 ## My process
 
 ### Built with
